@@ -1,0 +1,778 @@
+[
+  {
+    "id": "tortilla-espanola",
+    "name": "Tortilla española clásica",
+    "description": "Crujiente por fuera y jugosa por dentro. Ideal para aprovechar papas, cebolla y huevos.",
+    "category": "Cena",
+    "prepTimeMinutes": 30,
+    "baseServings": 4,
+    "difficulty": "Media",
+    "ingredients": [
+      {
+        "name": "Huevos",
+        "canonicalKey": "huevo",
+        "aliases": ["huevos", "huevo"],
+        "quantity": 6,
+        "unit": "unidades",
+        "singularLabel": "huevo",
+        "pluralLabel": "huevos"
+      },
+      {
+        "name": "Papa",
+        "canonicalKey": "papa",
+        "aliases": ["papas", "patata", "patatas"],
+        "quantity": 500,
+        "unit": "g"
+      },
+      {
+        "name": "Cebolla",
+        "canonicalKey": "cebolla",
+        "aliases": ["cebollas", "cebolla blanca", "cebolla amarilla"],
+        "quantity": 1,
+        "unit": "unidades",
+        "singularLabel": "cebolla",
+        "pluralLabel": "cebollas"
+      },
+      {
+        "name": "Aceite de oliva",
+        "canonicalKey": "aceite de oliva",
+        "aliases": ["aceite", "aceite vegetal"],
+        "quantity": 50,
+        "unit": "ml"
+      }
+    ],
+    "steps": [
+      "Pela y corta las papas en láminas finas y la cebolla en juliana.",
+      "Cocina las papas y la cebolla a fuego medio-bajo en aceite de oliva durante 15 minutos hasta que estén tiernas.",
+      "Bate los huevos con una pizca de sal en un bol grande e incorpora las papas escurridas.",
+      "Cuaja la mezcla en una sartén antiadherente 3-4 minutos por cada lado y sirve tibia."
+    ]
+  },
+  {
+    "id": "omelette-espinaca-queso",
+    "name": "Omelette de espinaca y queso",
+    "description": "Cena o desayuno alto en proteína en menos de 15 minutos. Perfecto para rescatar espinaca fresca.",
+    "category": "Desayuno",
+    "prepTimeMinutes": 12,
+    "baseServings": 2,
+    "difficulty": "Fácil",
+    "ingredients": [
+      {
+        "name": "Huevos",
+        "canonicalKey": "huevo",
+        "aliases": ["huevos", "huevo"],
+        "quantity": 4,
+        "unit": "unidades",
+        "singularLabel": "huevo",
+        "pluralLabel": "huevos"
+      },
+      {
+        "name": "Espinaca",
+        "canonicalKey": "espinaca",
+        "aliases": ["espinacas", "espinaca baby"],
+        "quantity": 60,
+        "unit": "g"
+      },
+      {
+        "name": "Queso",
+        "canonicalKey": "queso",
+        "aliases": ["queso rallado", "queso mozzarella", "queso mantecoso", "queso fresco"],
+        "quantity": 60,
+        "unit": "g"
+      },
+      {
+        "name": "Aceite de oliva",
+        "canonicalKey": "aceite de oliva",
+        "aliases": ["aceite", "aceite vegetal"],
+        "quantity": 15,
+        "unit": "ml"
+      }
+    ],
+    "steps": [
+      "Saltea ligeramente la espinaca con un chorrito de aceite de oliva hasta que pierda volumen.",
+      "Bate los huevos con sal y pimienta y viértelos sobre la sartén caliente.",
+      "Agrega el queso desmenuzado o rallado en una mitad cuando el huevo comience a cuajar.",
+      "Dobla el omelette por la mitad, cocina 1 minuto más y sirve."
+    ]
+  },
+  {
+    "id": "pasta-salsa-tomate-ajo",
+    "name": "Pasta con salsa de tomate y ajo",
+    "description": "Clásico reconfortante de alacena que resuelve el almuerzo con ingredientes básicos.",
+    "category": "Almuerzo",
+    "prepTimeMinutes": 20,
+    "baseServings": 2,
+    "difficulty": "Fácil",
+    "ingredients": [
+      {
+        "name": "Pasta",
+        "canonicalKey": "pasta",
+        "aliases": ["fideos", "espagueti", "espaguetis", "macarrones", "tallarines"],
+        "quantity": 200,
+        "unit": "g"
+      },
+      {
+        "name": "Salsa de tomate",
+        "canonicalKey": "salsa de tomate",
+        "aliases": ["tomate triturado", "puré de tomate", "pure de tomate"],
+        "quantity": 250,
+        "unit": "ml"
+      },
+      {
+        "name": "Ajo",
+        "canonicalKey": "ajo",
+        "aliases": ["ajos", "diente de ajo", "dientes de ajo"],
+        "quantity": 2,
+        "unit": "unidades",
+        "singularLabel": "diente de ajo",
+        "pluralLabel": "dientes de ajo"
+      },
+      {
+        "name": "Aceite de oliva",
+        "canonicalKey": "aceite de oliva",
+        "aliases": ["aceite"],
+        "quantity": 20,
+        "unit": "ml"
+      },
+      {
+        "name": "Queso",
+        "canonicalKey": "queso",
+        "aliases": ["queso rallado", "queso parmesano", "queso mozzarella"],
+        "quantity": 40,
+        "unit": "g"
+      }
+    ],
+    "steps": [
+      "Hierve abundante agua con sal y cocina la pasta al dente según las instrucciones del empaque.",
+      "Dora el ajo picado en aceite de oliva a fuego suave sin dejar que se queme.",
+      "Agrega la salsa de tomate, salpimienta y cocina 8 minutos a fuego lento.",
+      "Mezcla la pasta escurrida con la salsa y termina con el queso por encima."
+    ]
+  },
+  {
+    "id": "arroz-salteado-pollo-zanahoria",
+    "name": "Arroz salteado con pollo y zanahoria",
+    "description": "Plato completo en un solo sartén, rendidor y excelente para llevar al trabajo.",
+    "category": "Almuerzo",
+    "prepTimeMinutes": 30,
+    "baseServings": 3,
+    "difficulty": "Fácil",
+    "ingredients": [
+      {
+        "name": "Pollo",
+        "canonicalKey": "pollo",
+        "aliases": ["pechuga de pollo", "pechuga", "pollo trozado"],
+        "quantity": 300,
+        "unit": "g"
+      },
+      {
+        "name": "Arroz",
+        "canonicalKey": "arroz",
+        "aliases": ["arroz blanco", "arroz integral"],
+        "quantity": 250,
+        "unit": "g"
+      },
+      {
+        "name": "Zanahoria",
+        "canonicalKey": "zanahoria",
+        "aliases": ["zanahorias"],
+        "quantity": 2,
+        "unit": "unidades",
+        "singularLabel": "zanahoria",
+        "pluralLabel": "zanahorias"
+      },
+      {
+        "name": "Cebolla",
+        "canonicalKey": "cebolla",
+        "aliases": ["cebollas"],
+        "quantity": 1,
+        "unit": "unidades",
+        "singularLabel": "cebolla",
+        "pluralLabel": "cebollas"
+      },
+      {
+        "name": "Aceite de oliva",
+        "canonicalKey": "aceite de oliva",
+        "aliases": ["aceite", "aceite vegetal"],
+        "quantity": 30,
+        "unit": "ml"
+      }
+    ],
+    "steps": [
+      "Cocina el arroz con el doble de su volumen en agua y una pizca de sal.",
+      "Corta el pollo en cubos pequeños, la cebolla en cuadritos y la zanahoria en medias lunas finas.",
+      "Dora el pollo en aceite caliente, añade la cebolla y la zanahoria y saltea 7 minutos.",
+      "Incorpora el arroz cocido, saltea 3 minutos integrando todo bien y corrige la sal."
+    ]
+  },
+  {
+    "id": "avena-cremosa-platano",
+    "name": "Avena cremosa con plátano y leche",
+    "description": "Desayuno tibio, saciante y listo en 10 minutos para aprovechar plátanos maduros.",
+    "category": "Desayuno",
+    "prepTimeMinutes": 10,
+    "baseServings": 2,
+    "difficulty": "Fácil",
+    "ingredients": [
+      {
+        "name": "Avena",
+        "canonicalKey": "avena",
+        "aliases": ["avena en hojuelas", "copos de avena", "avena tradicional"],
+        "quantity": 100,
+        "unit": "g"
+      },
+      {
+        "name": "Leche",
+        "canonicalKey": "leche",
+        "aliases": ["leche entera", "leche descremada", "bebida vegetal", "leche vegetal"],
+        "quantity": 400,
+        "unit": "ml"
+      },
+      {
+        "name": "Plátano",
+        "canonicalKey": "platano",
+        "aliases": ["platanos", "banana", "bananas", "banano", "bananos"],
+        "quantity": 2,
+        "unit": "unidades",
+        "singularLabel": "plátano",
+        "pluralLabel": "plátanos"
+      }
+    ],
+    "steps": [
+      "Calienta la leche en una olla pequeña a fuego medio junto con la avena.",
+      "Revuelve durante 6-7 minutos hasta que espese a tu gusto.",
+      "Machaca medio plátano dentro de la olla para endulzar naturalmente y corta el resto en rodajas.",
+      "Sirve caliente con las rodajas de plátano encima."
+    ]
+  },
+  {
+    "id": "sandwich-queso-fundido",
+    "name": "Sándwich tostado de queso fundido",
+    "description": "Solución exprés y dorada con mantequilla para cenas ligeras o meriendas.",
+    "category": "Rápida",
+    "prepTimeMinutes": 10,
+    "baseServings": 2,
+    "difficulty": "Fácil",
+    "ingredients": [
+      {
+        "name": "Pan de molde",
+        "canonicalKey": "pan de molde",
+        "aliases": ["pan", "rebanadas de pan", "pan lactal", "pan integral"],
+        "quantity": 4,
+        "unit": "unidades",
+        "singularLabel": "rebanada de pan",
+        "pluralLabel": "rebanadas de pan"
+      },
+      {
+        "name": "Queso",
+        "canonicalKey": "queso",
+        "aliases": ["queso laminado", "queso cheddar", "queso mozzarella", "queso mantecoso"],
+        "quantity": 100,
+        "unit": "g"
+      },
+      {
+        "name": "Mantequilla",
+        "canonicalKey": "mantequilla",
+        "aliases": ["manteca", "margarina"],
+        "quantity": 20,
+        "unit": "g"
+      }
+    ],
+    "steps": [
+      "Unta ligeramente el exterior de las rebanadas de pan con mantequilla.",
+      "Coloca el queso entre dos rebanadas de pan para formar cada sándwich.",
+      "Tuesta en sartén a fuego medio-bajo 3 minutos por lado, presionando suavemente hasta que el queso se derrita.",
+      "Corta en diagonal y sirve de inmediato."
+    ]
+  },
+  {
+    "id": "ensalada-atun-tomate",
+    "name": "Ensalada fresca de atún y tomate",
+    "description": "Sin cocción, ligera y rica en proteína. Lista en 10 minutos.",
+    "category": "Rápida",
+    "prepTimeMinutes": 10,
+    "baseServings": 2,
+    "difficulty": "Fácil",
+    "ingredients": [
+      {
+        "name": "Atún en lata",
+        "canonicalKey": "atun en lata",
+        "aliases": ["atun", "atún", "lomo de atun"],
+        "quantity": 160,
+        "unit": "g"
+      },
+      {
+        "name": "Tomate",
+        "canonicalKey": "tomate",
+        "aliases": ["tomates", "jitomate", "jitomates"],
+        "quantity": 2,
+        "unit": "unidades",
+        "singularLabel": "tomate",
+        "pluralLabel": "tomates"
+      },
+      {
+        "name": "Cebolla",
+        "canonicalKey": "cebolla",
+        "aliases": ["cebollas", "cebolla morada"],
+        "quantity": 1,
+        "unit": "unidades",
+        "singularLabel": "cebolla",
+        "pluralLabel": "cebollas"
+      },
+      {
+        "name": "Aceite de oliva",
+        "canonicalKey": "aceite de oliva",
+        "aliases": ["aceite"],
+        "quantity": 20,
+        "unit": "ml"
+      },
+      {
+        "name": "Limón",
+        "canonicalKey": "limon",
+        "aliases": ["limones", "lima", "limas"],
+        "quantity": 1,
+        "unit": "unidades",
+        "singularLabel": "limón",
+        "pluralLabel": "limones"
+      }
+    ],
+    "steps": [
+      "Escurre bien el atún y desmenúzalo en una ensaladera.",
+      "Corta los tomates en cubos medianos y la cebolla en plumas muy finas.",
+      "Mezcla todo con el jugo de limón, aceite de oliva y una pizca de sal.",
+      "Sirve fresca inmediatamente."
+    ]
+  },
+  {
+    "id": "pasta-cremosa-pollo-espinaca",
+    "name": "Pasta cremosa con pollo y espinaca",
+    "description": "Textura cremosa sin necesidad de nata pesada, ideal para aprovechar leche y espinaca.",
+    "category": "Almuerzo",
+    "prepTimeMinutes": 25,
+    "baseServings": 3,
+    "difficulty": "Media",
+    "ingredients": [
+      {
+        "name": "Pasta",
+        "canonicalKey": "pasta",
+        "aliases": ["fideos", "espagueti", "penne", "tallarines"],
+        "quantity": 250,
+        "unit": "g"
+      },
+      {
+        "name": "Pollo",
+        "canonicalKey": "pollo",
+        "aliases": ["pechuga de pollo", "pechuga"],
+        "quantity": 300,
+        "unit": "g"
+      },
+      {
+        "name": "Espinaca",
+        "canonicalKey": "espinaca",
+        "aliases": ["espinacas"],
+        "quantity": 80,
+        "unit": "g"
+      },
+      {
+        "name": "Leche",
+        "canonicalKey": "leche",
+        "aliases": ["leche entera", "leche descremada"],
+        "quantity": 150,
+        "unit": "ml"
+      },
+      {
+        "name": "Queso",
+        "canonicalKey": "queso",
+        "aliases": ["queso rallado", "queso parmesano", "queso crema"],
+        "quantity": 50,
+        "unit": "g"
+      },
+      {
+        "name": "Mantequilla",
+        "canonicalKey": "mantequilla",
+        "aliases": ["manteca"],
+        "quantity": 15,
+        "unit": "g"
+      }
+    ],
+    "steps": [
+      "Cocina la pasta en agua hirviendo con sal y reserva medio vaso del agua de cocción.",
+      "Dora el pollo en cubos con la mantequilla hasta que esté bien cocido.",
+      "Agrega la leche, el queso y un chorrito del agua de cocción para formar una salsa ligera.",
+      "Incorpora la espinaca y la pasta cocida, mezcla 2 minutos hasta integrar y sirve."
+    ]
+  },
+  {
+    "id": "huevos-revueltos-tomate-cebolla",
+    "name": "Huevos revueltos con tomate y cebolla",
+    "description": "Clásico desayuno o cena rápida llena de sabor casero.",
+    "category": "Desayuno",
+    "prepTimeMinutes": 10,
+    "baseServings": 2,
+    "difficulty": "Fácil",
+    "ingredients": [
+      {
+        "name": "Huevos",
+        "canonicalKey": "huevo",
+        "aliases": ["huevos", "huevo"],
+        "quantity": 4,
+        "unit": "unidades",
+        "singularLabel": "huevo",
+        "pluralLabel": "huevos"
+      },
+      {
+        "name": "Tomate",
+        "canonicalKey": "tomate",
+        "aliases": ["tomates", "jitomate"],
+        "quantity": 1,
+        "unit": "unidades",
+        "singularLabel": "tomate",
+        "pluralLabel": "tomates"
+      },
+      {
+        "name": "Cebolla",
+        "canonicalKey": "cebolla",
+        "aliases": ["cebollas"],
+        "quantity": 1,
+        "unit": "unidades",
+        "singularLabel": "cebolla",
+        "pluralLabel": "cebollas"
+      },
+      {
+        "name": "Aceite de oliva",
+        "canonicalKey": "aceite de oliva",
+        "aliases": ["aceite", "aceite vegetal"],
+        "quantity": 15,
+        "unit": "ml"
+      }
+    ],
+    "steps": [
+      "Pica finamente la cebolla y el tomate en cubitos pequeños.",
+      "Sofríe la cebolla en el aceite durante 3 minutos, añade el tomate y cocina 2 minutos más.",
+      "Vierte los huevos batidos con sal y revuelve suavemente a fuego bajo hasta que queden cremosos.",
+      "Retira del fuego y sirve de inmediato."
+    ]
+  },
+  {
+    "id": "papas-doradas-ajo-queso",
+    "name": "Papas doradas al sartén con ajo y queso",
+    "description": "Guarnición o cena sencilla con papas crujientes y queso gratinado.",
+    "category": "Cena",
+    "prepTimeMinutes": 25,
+    "baseServings": 2,
+    "difficulty": "Fácil",
+    "ingredients": [
+      {
+        "name": "Papa",
+        "canonicalKey": "papa",
+        "aliases": ["papas", "patata", "patatas"],
+        "quantity": 400,
+        "unit": "g"
+      },
+      {
+        "name": "Ajo",
+        "canonicalKey": "ajo",
+        "aliases": ["ajos", "dientes de ajo"],
+        "quantity": 2,
+        "unit": "unidades",
+        "singularLabel": "diente de ajo",
+        "pluralLabel": "dientes de ajo"
+      },
+      {
+        "name": "Queso",
+        "canonicalKey": "queso",
+        "aliases": ["queso rallado", "queso mozzarella"],
+        "quantity": 60,
+        "unit": "g"
+      },
+      {
+        "name": "Aceite de oliva",
+        "canonicalKey": "aceite de oliva",
+        "aliases": ["aceite"],
+        "quantity": 25,
+        "unit": "ml"
+      }
+    ],
+    "steps": [
+      "Corta las papas en cubos pequeños de tamaño uniforme para que se cocinen parejo.",
+      "Saltea las papas en aceite de oliva a fuego medio, tapadas durante 12 minutos, moviendo de vez en cuando.",
+      "Destapa, agrega el ajo picado y dora 5 minutos más hasta que estén crujientes.",
+      "Espolvorea el queso encima, tapa 1 minuto para que funda y sirve."
+    ]
+  },
+  {
+    "id": "arroz-atun-pimiento",
+    "name": "Arroz con atún y pimiento salteado",
+    "description": "Económico, rápido y equilibrado usando básicos de alacena y verduras frescas.",
+    "category": "Almuerzo",
+    "prepTimeMinutes": 20,
+    "baseServings": 2,
+    "difficulty": "Fácil",
+    "ingredients": [
+      {
+        "name": "Arroz",
+        "canonicalKey": "arroz",
+        "aliases": ["arroz blanco", "arroz integral"],
+        "quantity": 200,
+        "unit": "g"
+      },
+      {
+        "name": "Atún en lata",
+        "canonicalKey": "atun en lata",
+        "aliases": ["atun", "atún"],
+        "quantity": 160,
+        "unit": "g"
+      },
+      {
+        "name": "Pimiento",
+        "canonicalKey": "pimiento",
+        "aliases": ["pimientos", "morron", "morrón", "pimenton", "pimentón"],
+        "quantity": 1,
+        "unit": "unidades",
+        "singularLabel": "pimiento",
+        "pluralLabel": "pimientos"
+      },
+      {
+        "name": "Cebolla",
+        "canonicalKey": "cebolla",
+        "aliases": ["cebollas"],
+        "quantity": 1,
+        "unit": "unidades",
+        "singularLabel": "cebolla",
+        "pluralLabel": "cebollas"
+      },
+      {
+        "name": "Aceite de oliva",
+        "canonicalKey": "aceite de oliva",
+        "aliases": ["aceite"],
+        "quantity": 20,
+        "unit": "ml"
+      }
+    ],
+    "steps": [
+      "Cuece el arroz en agua con sal hasta que quede suelto.",
+      "Corta el pimiento y la cebolla en cubos pequeños y sofríelos en aceite de oliva 6 minutos.",
+      "Añade el atún escurrido y mezcla con el sofrito durante 2 minutos.",
+      "Agrega el arroz cocido, integra bien y sirve caliente."
+    ]
+  },
+  {
+    "id": "panqueques-avena-platano",
+    "name": "Panqueques de avena y plátano",
+    "description": "Sin harinas refinadas, naturalmente dulces y perfectos para plátanos muy maduros.",
+    "category": "Desayuno",
+    "prepTimeMinutes": 15,
+    "baseServings": 2,
+    "difficulty": "Fácil",
+    "ingredients": [
+      {
+        "name": "Huevos",
+        "canonicalKey": "huevo",
+        "aliases": ["huevos", "huevo"],
+        "quantity": 2,
+        "unit": "unidades",
+        "singularLabel": "huevo",
+        "pluralLabel": "huevos"
+      },
+      {
+        "name": "Avena",
+        "canonicalKey": "avena",
+        "aliases": ["avena en hojuelas", "copos de avena"],
+        "quantity": 80,
+        "unit": "g"
+      },
+      {
+        "name": "Plátano",
+        "canonicalKey": "platano",
+        "aliases": ["platanos", "banana", "banano"],
+        "quantity": 1,
+        "unit": "unidades",
+        "singularLabel": "plátano",
+        "pluralLabel": "plátanos"
+      },
+      {
+        "name": "Leche",
+        "canonicalKey": "leche",
+        "aliases": ["leche entera", "leche descremada", "leche vegetal"],
+        "quantity": 100,
+        "unit": "ml"
+      },
+      {
+        "name": "Mantequilla",
+        "canonicalKey": "mantequilla",
+        "aliases": ["manteca"],
+        "quantity": 10,
+        "unit": "g"
+      }
+    ],
+    "steps": [
+      "Licúa o tritura el plátano con la avena, los huevos y la leche hasta obtener una mezcla homogénea.",
+      "Deja reposar la mezcla 3 minutos para que la avena hidrate.",
+      "Engrasa una sartén con mantequilla y cocina porciones pequeñas 2 minutos por cada lado.",
+      "Sirve tibios solos o con fruta."
+    ]
+  },
+  {
+    "id": "pollo-salteado-pimiento",
+    "name": "Pollo salteado con pimiento y cebolla",
+    "description": "Salteado aromático alto en proteína, listo en poco más de 20 minutos.",
+    "category": "Cena",
+    "prepTimeMinutes": 22,
+    "baseServings": 2,
+    "difficulty": "Fácil",
+    "ingredients": [
+      {
+        "name": "Pollo",
+        "canonicalKey": "pollo",
+        "aliases": ["pechuga de pollo", "pechuga"],
+        "quantity": 300,
+        "unit": "g"
+      },
+      {
+        "name": "Pimiento",
+        "canonicalKey": "pimiento",
+        "aliases": ["pimientos", "morron", "morrón", "pimentón"],
+        "quantity": 1,
+        "unit": "unidades",
+        "singularLabel": "pimiento",
+        "pluralLabel": "pimientos"
+      },
+      {
+        "name": "Cebolla",
+        "canonicalKey": "cebolla",
+        "aliases": ["cebollas"],
+        "quantity": 1,
+        "unit": "unidades",
+        "singularLabel": "cebolla",
+        "pluralLabel": "cebollas"
+      },
+      {
+        "name": "Ajo",
+        "canonicalKey": "ajo",
+        "aliases": ["ajos", "dientes de ajo"],
+        "quantity": 2,
+        "unit": "unidades",
+        "singularLabel": "diente de ajo",
+        "pluralLabel": "dientes de ajo"
+      },
+      {
+        "name": "Aceite de oliva",
+        "canonicalKey": "aceite de oliva",
+        "aliases": ["aceite"],
+        "quantity": 20,
+        "unit": "ml"
+      }
+    ],
+    "steps": [
+      "Corta el pollo en tiras finas y salpimienta al gusto.",
+      "Corta el pimiento y la cebolla en tiras y pica los dientes de ajo.",
+      "Saltea el pollo en aceite bien caliente hasta dorar y retíralo brevemente.",
+      "Saltea las verduras con el ajo 5 minutos, devuelve el pollo al sartén, mezcla 2 minutos y sirve."
+    ]
+  },
+  {
+    "id": "tostadas-francesas-rapidas",
+    "name": "Tostadas francesas rápidas",
+    "description": "Manera deliciosa de aprovechar pan de molde antes de que se ponga duro.",
+    "category": "Desayuno",
+    "prepTimeMinutes": 12,
+    "baseServings": 2,
+    "difficulty": "Fácil",
+    "ingredients": [
+      {
+        "name": "Pan de molde",
+        "canonicalKey": "pan de molde",
+        "aliases": ["pan", "pan lactal", "rebanadas de pan"],
+        "quantity": 4,
+        "unit": "unidades",
+        "singularLabel": "rebanada de pan",
+        "pluralLabel": "rebanadas de pan"
+      },
+      {
+        "name": "Huevos",
+        "canonicalKey": "huevo",
+        "aliases": ["huevos", "huevo"],
+        "quantity": 2,
+        "unit": "unidades",
+        "singularLabel": "huevo",
+        "pluralLabel": "huevos"
+      },
+      {
+        "name": "Leche",
+        "canonicalKey": "leche",
+        "aliases": ["leche entera", "leche descremada"],
+        "quantity": 120,
+        "unit": "ml"
+      },
+      {
+        "name": "Mantequilla",
+        "canonicalKey": "mantequilla",
+        "aliases": ["manteca"],
+        "quantity": 15,
+        "unit": "g"
+      }
+    ],
+    "steps": [
+      "Bate los huevos junto con la leche en un plato hondo.",
+      "Sumerge cada rebanada de pan 5 segundos por lado para que absorba la mezcla sin deshacerse.",
+      "Derrite la mantequilla en una sartén a fuego medio y dora las rebanadas 2-3 minutos por lado.",
+      "Sirve calientes."
+    ]
+  },
+  {
+    "id": "bowl-arroz-frijoles-huevo",
+    "name": "Bowl proteico de arroz, frijoles y huevo",
+    "description": "Almuerzo completo, económico y nutritivo en 20 minutos.",
+    "category": "Almuerzo",
+    "prepTimeMinutes": 20,
+    "baseServings": 2,
+    "difficulty": "Fácil",
+    "ingredients": [
+      {
+        "name": "Arroz",
+        "canonicalKey": "arroz",
+        "aliases": ["arroz blanco", "arroz integral"],
+        "quantity": 180,
+        "unit": "g"
+      },
+      {
+        "name": "Frijoles cocidos",
+        "canonicalKey": "frijoles cocidos",
+        "aliases": ["frijoles", "porotos", "porotos cocidos", "alubias", "caraotas"],
+        "quantity": 200,
+        "unit": "g"
+      },
+      {
+        "name": "Huevos",
+        "canonicalKey": "huevo",
+        "aliases": ["huevos", "huevo"],
+        "quantity": 2,
+        "unit": "unidades",
+        "singularLabel": "huevo",
+        "pluralLabel": "huevos"
+      },
+      {
+        "name": "Tomate",
+        "canonicalKey": "tomate",
+        "aliases": ["tomates", "jitomate"],
+        "quantity": 1,
+        "unit": "unidades",
+        "singularLabel": "tomate",
+        "pluralLabel": "tomates"
+      },
+      {
+        "name": "Aceite de oliva",
+        "canonicalKey": "aceite de oliva",
+        "aliases": ["aceite"],
+        "quantity": 15,
+        "unit": "ml"
+      }
+    ],
+    "steps": [
+      "Cocina el arroz y calienta los frijoles cocidos en una ollita con una pizca de sal.",
+      "Pica el tomate en cubos pequeños.",
+      "Cocina los huevos a la plancha o revueltos con el aceite de oliva.",
+      "Sirve el arroz como base del bowl, agrega los frijoles, el tomate fresco y corona con el huevo."
+    ]
+  }
+]
