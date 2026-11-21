@@ -25,11 +25,6 @@
   - *Compartir despensa con mi hogar (hasta 5 personas)* (`FAMILY`)
   - Modal con precios mensuales/anuales y formulario de acceso anticipado con 50% de descuento conectado a `POST /api/leads`, que guarda `correo,funcion_clicada,plan,fecha` en `leads.csv`.
 
-## Cómo ejecutar localmente
-
-```bash
-npm run dev
-```
 
 *(En Windows PowerShell con política de scripts restringida, puedes usar `npm.cmd run dev`.)*
 
