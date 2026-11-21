@@ -17,7 +17,7 @@ export async function POST(request: Request) {
     const body = await request.json();
     const email = typeof body?.email === "string" ? body.email.trim().toLowerCase() : "";
     const rawFeature = body?.funcion_pro ?? body?.feature;
-    const funcionPro = typeof rawFeature === "string" ? rawFeature.trim() : "";
+    const funcion_pro = typeof rawFeature === "string" ? rawFeature.trim() : "";
     const plan = typeof body?.plan === "string" ? body.plan.trim().toUpperCase() : "";
 
     const emailRegex = /^[^\s@]+@[^\s@]+\.[^\s@]+$/;
@@ -28,7 +28,7 @@ export async function POST(request: Request) {
       );
     }
 
-    if (!funcionPro || !plan) {
+    if (!funcion_pro || !plan) {
       return NextResponse.json(
         { ok: false, error: "Faltan datos de la función o plan seleccionado." },
         { status: 400 }
@@ -37,18 +37,18 @@ export async function POST(request: Request) {
 
     const supabase = createClient(supabaseUrl, supabaseAnonKey);
 
-    const { error } = await supabase.from("leads").insert([
-      {
-        email,
-        funcion_pro: funcionPro,
-        plan,
-      },
-    ]);
+    const { error } = await supabase
+      .from("leads")
+      .insert([{ email, funcion_pro, plan }]);
 
     if (error) {
       console.error("Error guardando lead en Supabase:", error);
       return NextResponse.json(
-        { ok: false, error: "No pudimos registrar tu correo en este momento. Intenta de nuevo." },
+        {
+          ok: false,
+          error: "No pudimos registrar tu correo en este momento. Intenta de nuevo.",
+          details: error.message,
+        },
         { status: 500 }
       );
     }
@@ -60,7 +60,11 @@ export async function POST(request: Request) {
   } catch (error) {
     console.error("Error inesperado en /api/leads:", error);
     return NextResponse.json(
-      { ok: false, error: "No pudimos registrar tu correo en este momento. Intenta de nuevo." },
+      {
+        ok: false,
+        error: "No pudimos registrar tu correo en este momento. Intenta de nuevo.",
+        details: error instanceof Error ? error.message : String(error),
+      },
       { status: 500 }
     );
   }
