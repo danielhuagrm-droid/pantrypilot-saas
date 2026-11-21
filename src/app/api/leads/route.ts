@@ -47,7 +47,6 @@ export async function POST(request: Request) {
         {
           ok: false,
           error: "No pudimos registrar tu correo en este momento. Intenta de nuevo.",
-          details: error.message,
         },
         { status: 500 }
       );
@@ -63,7 +62,6 @@ export async function POST(request: Request) {
       {
         ok: false,
         error: "No pudimos registrar tu correo en este momento. Intenta de nuevo.",
-        details: error instanceof Error ? error.message : String(error),
       },
       { status: 500 }
     );
