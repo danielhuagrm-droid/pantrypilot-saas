@@ -23,6 +23,6 @@
   - *Planificador semanal automático* (`PLUS`)
   - *Estadísticas de ahorro y desperdicio* (`PLUS`)
   - *Compartir despensa con mi hogar (hasta 5 personas)* (`FAMILY`)
-  - Modal con precios mensuales/anuales y formulario de acceso anticipado con 50% de descuento conectado a `POST /api/leads`, que guarda `correo,funcion_clicada,plan,fecha` en `leads.csv`.
+  - Modal con precios mensuales/anuales y formulario de acceso anticipado con 50% de descuento conectado a `POST /api/leads`, que guarda `email`, `funcion_pro` y `plan` en la tabla `leads` de Supabase (configurando `SUPABASE_URL` y `SUPABASE_ANON_KEY` en `.env.local`).
 
 

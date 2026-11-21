@@ -1,23 +1,23 @@
-import { promises as fs } from "fs";
-import path from "path";
+import { createClient } from "@supabase/supabase-js";
 import { NextResponse } from "next/server";
-
-const LEADS_FILE = path.join(process.cwd(), "leads.csv");
-const CSV_HEADER = "correo,funcion_clicada,plan,fecha\n";
-
-function escapeCsvCell(value: string): string {
-  const sanitized = value.replace(/\r?\n/g, " ").trim();
-  if (sanitized.includes(",") || sanitized.includes('"')) {
-    return `"${sanitized.replace(/"/g, '""')}"`;
-  }
-  return sanitized;
-}
 
 export async function POST(request: Request) {
   try {
+    const supabaseUrl = process.env.SUPABASE_URL;
+    const supabaseAnonKey = process.env.SUPABASE_ANON_KEY;
+
+    if (!supabaseUrl || !supabaseAnonKey) {
+      console.error("Faltan variables de entorno SUPABASE_URL o SUPABASE_ANON_KEY.");
+      return NextResponse.json(
+        { ok: false, error: "Configuración del servidor incompleta. Intenta más tarde." },
+        { status: 500 }
+      );
+    }
+
     const body = await request.json();
     const email = typeof body?.email === "string" ? body.email.trim().toLowerCase() : "";
-    const feature = typeof body?.feature === "string" ? body.feature.trim() : "";
+    const rawFeature = body?.funcion_pro ?? body?.feature;
+    const funcionPro = typeof rawFeature === "string" ? rawFeature.trim() : "";
     const plan = typeof body?.plan === "string" ? body.plan.trim().toUpperCase() : "";
 
     const emailRegex = /^[^\s@]+@[^\s@]+\.[^\s@]+$/;
@@ -28,30 +28,37 @@ export async function POST(request: Request) {
       );
     }
 
-    if (!feature || !plan) {
+    if (!funcionPro || !plan) {
       return NextResponse.json(
         { ok: false, error: "Faltan datos de la función o plan seleccionado." },
         { status: 400 }
       );
     }
 
-    const timestamp = new Date().toISOString();
-    const row = `${escapeCsvCell(email)},${escapeCsvCell(feature)},${escapeCsvCell(plan)},${escapeCsvCell(timestamp)}\n`;
+    const supabase = createClient(supabaseUrl, supabaseAnonKey);
 
-    try {
-      await fs.access(LEADS_FILE);
-    } catch {
-      await fs.writeFile(LEADS_FILE, CSV_HEADER, "utf8");
+    const { error } = await supabase.from("leads").insert([
+      {
+        email,
+        funcion_pro: funcionPro,
+        plan,
+      },
+    ]);
+
+    if (error) {
+      console.error("Error guardando lead en Supabase:", error);
+      return NextResponse.json(
+        { ok: false, error: "No pudimos registrar tu correo en este momento. Intenta de nuevo." },
+        { status: 500 }
+      );
     }
-
-    await fs.appendFile(LEADS_FILE, row, "utf8");
 
     return NextResponse.json({
       ok: true,
       message: "¡Listo! Te reservamos tu 50% de descuento en la lista de acceso anticipado.",
     });
   } catch (error) {
-    console.error("Error guardando lead en leads.csv:", error);
+    console.error("Error inesperado en /api/leads:", error);
     return NextResponse.json(
       { ok: false, error: "No pudimos registrar tu correo en este momento. Intenta de nuevo." },
       { status: 500 }
