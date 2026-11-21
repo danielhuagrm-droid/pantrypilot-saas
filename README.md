@@ -26,6 +26,3 @@
   - Modal con precios mensuales/anuales y formulario de acceso anticipado con 50% de descuento conectado a `POST /api/leads`, que guarda `correo,funcion_clicada,plan,fecha` en `leads.csv`.
 
 
-*(En Windows PowerShell con política de scripts restringida, puedes usar `npm.cmd run dev`.)*
-
-Abre [http://localhost:3000](http://localhost:3000) en tu navegador.
